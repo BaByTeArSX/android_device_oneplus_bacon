@@ -55,5 +55,9 @@ BOARD_NFC_CHIPSET := pn547
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 
+#Flags
+COMMON_GLOBAL_CFLAGS += -O3
+LIQUIFY := true
+
 # inherit from the proprietary version
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
